@@ -17,6 +17,7 @@ import {
   Checking,
   Notification,
   AcceptRequest,
+  ChangePassword
 } from "./screens/index.js";
 
 import { useFonts } from "expo-font";
@@ -172,6 +173,13 @@ export default function App() {
         <Stack.Screen
           name="AcceptRequest"
           component={AcceptRequest}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="ChangePassword"
+          component={ChangePassword}
           options={{
             headerShown: false,
           }}

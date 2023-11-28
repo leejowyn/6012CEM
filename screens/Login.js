@@ -2,10 +2,10 @@ import { View, Text, Image, TouchableOpacity } from "react-native";
 import React, { useCallback, useReducer } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import PageContainer from "../components/PageContainer";
-import { COLORS, images, FONTS, SIZES } from "../constants";
-import { MaterialIcons, FontAwesome } from "@expo/vector-icons";
 import Input from "../components/Input";
 import Button from "../components/Button";
+import { COLORS, images, FONTS, SIZES } from "../constants";
+import { MaterialIcons, FontAwesome } from "@expo/vector-icons";
 import { reducer } from "../utils/reducers/formReducers";
 import { validateInput } from '../utils/actions/formActions'
 

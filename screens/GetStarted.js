@@ -14,6 +14,7 @@ const GetStarted = ({ navigation }) => {
             flex: 1,
             marginHorizontal: 22,
             alignItems: "center",
+            marginTop:50
           }}
         >
           <Image

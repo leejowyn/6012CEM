@@ -36,6 +36,7 @@ const ResetPassword = ({ navigation }) => {
             flex: 1,
             marginHorizontal: 22,
             alignItems: "center",
+            justifyContent: "center",
           }}
         >
           <Image

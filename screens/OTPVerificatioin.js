@@ -49,7 +49,7 @@ const OTPVerificatioin = ({ navigation }) => {
           <Button
             title="VERIFY"
             filled
-            onPress={() => navigation.navigate("SuccessVerification")}
+            onPress={() => navigation.navigate("ChangePassword")}
             style={{
               width: "100%",
               marginVertical: 12,

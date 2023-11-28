@@ -6,6 +6,7 @@ import Slideshow from "react-native-image-slider-show";
 import { COLORS, SIZES, FONTS } from "../constants";
 import { categories } from "../constants/data";
 import DonationCard from "../components/DonationCard";
+import { useNavigation } from '@react-navigation/native';
 
 const Home = ({ navigation }) => {
   const [position, setPosition] = useState(0);
@@ -37,7 +38,8 @@ const Home = ({ navigation }) => {
           marginVertical: 12,
         }}
       >
-        <TouchableOpacity onPress={() => console.log("Pressed")}>
+        <TouchableOpacity 
+          onPress={() => navigation.navigate("Home")}>
           <MaterialCommunityIcons
             name="view-dashboard"
             size={28}
@@ -60,7 +62,7 @@ const Home = ({ navigation }) => {
           onPress={() => navigation.navigate("Notification")}>
             <Ionicons
               name="notifications-outline"
-              size={28}
+              size={38}
               color={COLORS.black}
             />
           </TouchableOpacity>
@@ -83,14 +85,20 @@ const Home = ({ navigation }) => {
   }
 
   function renderFeatures() {
+    const navigation = useNavigation();
+  
+    const handleCategoryPress = (screen) => {
+      navigation.navigate(screen);
+    };
+  
     return (
       <View
         style={{
           marginVertical: SIZES.padding,
-          width: "100%",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          flexWrap: "wrap",
+          width: '100%',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          flexWrap: 'wrap',
         }}
       >
         {categories.map((category, index) => (
@@ -103,10 +111,11 @@ const Home = ({ navigation }) => {
               borderWidth: 2,
               backgroundColor: COLORS.white,
               borderRadius: 10,
-              alignItems: "center",
-              justifyContent: "center",
+              alignItems: 'center',
+              justifyContent: 'center',
               marginBottom: 22,
             }}
+            onPress={() => handleCategoryPress(category.screen)}
           >
             <Image
               source={category.icon}

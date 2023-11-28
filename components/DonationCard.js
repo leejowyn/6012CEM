@@ -94,6 +94,9 @@ const DonationCard = (props) => {
           alignItems: "center",
         }}
       >
+      <TouchableOpacity 
+        onPress={props.onPress}
+        >
         <Image
           source={icons.bplusIcon}
           resizeMode="contain"
@@ -101,8 +104,11 @@ const DonationCard = (props) => {
             marginBottom: 32,
           }}
         />
+        </TouchableOpacity>
 
-        <TouchableOpacity onPress={props.onPress}>
+        <TouchableOpacity 
+        onPress={props.onPress}
+        >
           <Text
             style={{
               ...FONTS.h4,

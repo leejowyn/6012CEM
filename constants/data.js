@@ -49,26 +49,32 @@ export const categories = [
     {
         icon: icons.categoryIcon1,
         title: 'Find Donors',
+        screen: 'Search',
     },
     {
         icon: icons.categoryIcon2,
         title: 'Donates',
+        screen: 'DonationRequest',
     },
     {
         icon: icons.categoryIcon3,
         title: 'Order Blood',
+        screen: 'Request',
     },
     {
         icon: icons.categoryIcon4,
         title: 'Assistant',
+        screen: 'Checking',
     },
     {
         icon: icons.categoryIcon5,
         title: 'Report',
+        screen: 'Report',
     },
     {
         icon: icons.categoryIcon6,
-        title: 'Campain',
+        title: 'Campaign',
+        screen: 'Home',
     },
 ]
 

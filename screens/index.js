@@ -17,6 +17,7 @@ import EditProfile from "./EditProfile";
 import Checking from "./Checking";
 import Notification from "./Notification";
 import AcceptRequest from "./AcceptRequest";
+import ChangePassword from "./ChangePassword";
 
 export {
     GetStarted,
@@ -38,4 +39,5 @@ export {
     Checking,
     Notification,
     AcceptRequest,
+    ChangePassword
 }

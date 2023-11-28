@@ -47,7 +47,6 @@ const Notification = ({navigation}) => {
                 location={donationRequest.location}
                 postedDate={donationRequest.postedDate}
                 requestMessage="Requested for your blood"
-                onPress={() => navigation.navigate('AcceptRequest')}
               />
             ))}
           </ScrollView>
