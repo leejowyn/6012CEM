@@ -12,10 +12,10 @@ const Home = ({ navigation }) => {
   const [position, setPosition] = useState(0);
   const [dataSource, setDataSource] = useState([
     {
-      url: "https://i.ibb.co/YXKSm0q/16262070-tp227-facebookeventcover-06.jpg",
+      url: require("../assets/images/slideshow1.jpg"),
     },
     {
-      url: "https://i.ibb.co/vhBbSQf/16262056-tp227-facebookeventcover-04.jpg",
+      url: require("../assets/images/slideshow2.jpg"),
     },
   ]);
 
